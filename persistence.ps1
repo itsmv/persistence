@@ -1,5 +1,5 @@
 # Get the current time and add 1 minute
-$startTime = (Get-Date).AddMinutes(1).ToString("HH:mm")
+$startTime = (Get-Date).AddMinutes(2).ToString("HH:mm")
 
 # Path to your PowerShell script
 $scriptPath = Join-Path -Path $PSScriptRoot -ChildPath "beep.ps1"
