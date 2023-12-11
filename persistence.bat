@@ -9,4 +9,4 @@ REM Construct the full path to the PowerShell script
 set "scriptPath=%batchPath%beep.ps1"
 
 REM Schedule the PowerShell script using schtasks
-schtasks /create /sc HOURLY /tn "MyTasks\BeepTask" /tr "PowerShell.exe -File \"%scriptPath%\"" /st $startTime
+schtasks /create /sc HOURLY /tn "MyTasks\BeepTask" /tr "PowerShell.exe -File \"%scriptPath%\"" /st %startTime%
