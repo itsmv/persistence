@@ -5,4 +5,4 @@ $startTime = (Get-Date).AddMinutes(2).ToString("HH:mm")
 $scriptPath = Join-Path -Path $PSScriptRoot -ChildPath "beep.ps1"
 
 # Schedule the PowerShell script using schtasks
-schtasks /create /sc HOURLY /tn "MyTasks\BeepTask" /st $startTime /tr "PowerShell.exe -File `"$scriptPath`""
+schtasks /create /sc MINUTE /tn "MyTasks\BeepTask" /st $startTime /tr "PowerShell.exe -File `"$scriptPath`""
